@@ -47,35 +47,24 @@ python -m venv venv
 pip install --upgrade pip
 
 # Core dependencies
-pip install opencv-python
+pip install scipy matplotlib pyserial pandas scikit-learn
+pip install opencv-python opencv-contrib-python
 pip install numpy
 pip install pillow
 pip install openai==1.30.1   # Match your API version & structure
 pip install requests
 pip install python-dotenv    # Optional, for storing API keys in a .env file
+pip install pyserial
+pip install torch torchvision torchaudio transformers
+pip install ultralytics
+pip install python-dotenv openai
+pip install --upgrade openai
+
+
+
+
 
 ```
-###📦 If You’re Using Image-to-Text Models (like LLaVA or Phi3-Vision)
-You may need:
-
-```bash
-pip install matplotlib
-pip install transformers
-pip install torch torchvision torchaudio
-```
-###⚠️ These are only needed if you plan to run a local visual model like llava or phi3, which is not currently in place. ###Otherwise, they are not required for API-only use.
-
-###🖼️ OpenCV Camera Access Issues on Windows
-###If OpenCV can’t access your camera on Windows, install these:
-
-```bash
-pip install opencv-contrib-python
-```
-
-
-
-
-
 
 
 ### 📁 Project Structure
